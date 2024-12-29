@@ -7,6 +7,9 @@ import { ThemeSwitcher } from "./_components/theme-switcher";
 
 import "./globals.css";
 
+import config from "../../next.config";
+const { basePath } = config;
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,36 +26,37 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    href={`${basePath}/favicon/`}
     <html lang="en">
       <head>
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
+          href={`${basePath}/favicon/apple-touch-icon.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href={`${basePath}/favicon/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href={`${basePath}/favicon/favicon-16x16.png`}
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
           rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
+          href={`${basePath}/favicon/favicon-32x32.png`}
           color="#000000"
         />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="msapplication-config"
-          content="/favicon/browserconfig.xml"
+          content={`${basePath}/favicon/browserconfig.xml`}
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
