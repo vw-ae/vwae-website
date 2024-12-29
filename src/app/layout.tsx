@@ -26,7 +26,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    href={`${basePath}/favicon/`}
     <html lang="en">
       <head>
         <link
