@@ -8,7 +8,7 @@
 
     Mantenha o mesmo formato, troque apenas o texto.
 
-- [/public/assets/images/authors/vitor.jpeg](public/assets/images/authors/vitor.jpeg)
+- [/public/assets/blog/authors/vitor.jpeg](public/assets/images/authors/vitor.jpeg)
 
     Sua foto.
 
