@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
+// next.config.js
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   /**
    * Enable static exports for the App Router.
    *
@@ -26,4 +26,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
