@@ -51,7 +51,7 @@ export default function RootLayout({
           href={`${basePath}/favicon/favicon-32x32.png`}
           color="#000000"
         />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="shortcut icon" href={`${basePath}/favicon/favicon.ico`} />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="msapplication-config"
